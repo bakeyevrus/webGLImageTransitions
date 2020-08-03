@@ -16,7 +16,6 @@
 		var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
 		supportsCssVars() || alert("Please view this in a modern browser that supports CSS Variables.");
 	</script>
-	<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
 </head>
 
 <body class="demo-1 cda-removeleft cda-naked cda-noimg">
@@ -45,11 +44,11 @@
 			<div class="portfolio-item__image-wrapper">
 				<div class="portfolio-item__image-container">
 					<div class="portfolio-item__image" id="slider"
-						data-images='["img/img11.png", "img/img12.png", "img/img13.png"]'>
+						data-images='["img/img11.png", "img/img12.png", "img/img13.png"]'
+						data-image-displacement="img/disp1.jpg">
+						<img src="img/img11.png" id="slider-fallback" class="portfolio-item__image-fallback">
 					</div>
 				</div>
-
-				<!-- <img src="img/img11-fall.png" class="test"> -->
 			</div>
 		</div>
 		<div class="dummy">
