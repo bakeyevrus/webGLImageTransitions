@@ -1,12 +1,14 @@
-
 let sketch = new Sketch({
+	containerId: 'slider',
+	fallbackId: 'slider-fallback',
+	trackedElId: 'portfolio',
 	duration: 1.5,
 	debug: true,
 	easing: 'easeOut',
 	uniforms: {
-		width: {value: 0.5, type:'f', min:0, max:10},
-		scaleX: {value: 40, type:'f', min:0.1, max:60},
-		scaleY: {value: 40, type:'f', min:0.1, max:60},
+		width: { value: 0.5, type: 'f', min: 0, max: 10 },
+		scaleX: { value: 40, type: 'f', min: 0.1, max: 60 },
+		scaleY: { value: 40, type: 'f', min: 0.1, max: 60 },
 		// border: {value: 1, type:'f', min:0., max:1},
 	},
 	fragment: `
@@ -202,5 +204,3 @@ let sketch = new Sketch({
 		}
 	`
 });
-
-
